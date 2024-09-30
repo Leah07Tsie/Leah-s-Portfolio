@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to bottom, #6a5acd, #00bfff);
+            color: #fff;
+        }
+        h1, h2, h3 {
+            opacity: 0;
+            transform: translateY(-30px);
+            animation: fly-in 0.5s forwards;
+        }
+        @keyframes fly-in {
+            0% { opacity: 0; transform: translateY(-30px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+        h1 {
+            font-family: 'Dancing Script', cursive;
+            font-size: 4em;
+            text-align: center;
+            margin: 20px 0;
+            animation-delay: 0.5s;
+        }
+        h2 {
+            font-size: 3em;
+            text-align: center;
+            animation-delay: 1s;
+        }
+        form {
+            text-align: center;
+            margin: 40px auto;
+            max-width: 600px;
+        }
+        label {
+            font-size: 1.5em;
+            display: block;
+            margin-bottom: 10px;
+        }
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            font-size: 1.5em;
+            padding: 10px;
+            width: 100%;
+            margin-bottom: 20px;
+            border: none;
+            border-radius: 5px;
+        }
+        button {
+            font-size: 1.5em;
+            padding: 10px 20px;
+            background-color: #ff69b4; /* Pink */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #ff1493; /* Deep Pink */
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Contact Me</h1>
+        <nav>
+            <ul style="list-style-type: none; padding: 0; text-align: center;">
+                <li style="display: inline; margin: 0 15px;"><a href="index.html" style="color: white; text-decoration: none;">Home</a></li>
+                <li style="display: inline; margin: 0 15px;"><a href="about.html" style="color: white; text-decoration: none;">About</a></li>
+                <li style="display: inline; margin: 0 15px;"><a href="services.html" style="color: white; text-decoration: none;">Services</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section style="padding: 40px; text-align: center;">
+        <h2>Get in Touch</h2>
+        <form action="submit_form.php" method="post"> <!-- PHP form handling script -->
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+        <h3>Contact Details</h3>
+        <p style="font-size: 1.5em;">Email: <a href="mailto:leahtsie@gmail.com" style="color: white;">leahtsie@gmail.com</a></p>
+        <p style="font-size: 1.5em;">Phone: 71506194</p>
+        <p style="font-size: 1.5em;">LinkedIn: <a href="https://www.linkedin.com/in/leah-tsie-235404264/" style="color: white;">Leah Tsie</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Leah Tsie. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
+
